@@ -93,3 +93,26 @@ body {
     font-size: 1rem;
     color: #388e3c;
 }
+.importance-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.importance-section h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #388e3c;
+    font-size: 2rem;
+}
+
+.importance-section p {
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.importance-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
