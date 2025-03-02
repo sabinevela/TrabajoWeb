@@ -1,26 +1,26 @@
 <nav id="navbar">
     <div class="container">
-
         <div class="logo-container">
             <img src="assets/img/Logo.png" alt="Logo NutriFruti" class="logo">
             <span class="brand-name">NutriFruti</span>
         </div>
 
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
+            <li><a a routerLink="home">Home</a></li>
+            <li><a routerLink="nosotros">Nosotros</a></li>
+            <li><a routerLink="contactos">Contactos</a></li>
+            <li><a routerLink="contador">Contador de Calorías</a></li>
+            <li><a routerLink="recetas">Recetas</a></li>
         </ul>
         <a href="#" class="contact-btn">Contactos</a>
     </div>
 </nav>
 <br><br>
 
-<app-home></app-home>
+<router-outlet></router-outlet>
 
 <footer>
     <div class="footer-container">
-
         <div class="footer-info">
             <h3>NutriFruti</h3>
             <p>Salud y sabor en cada bocado.</p>
@@ -51,11 +51,10 @@
             </iframe>
         </div>
     </div>
-
-
     <div class="footer-bottom">
         <p>&copy; 2025 NutriFruti - Todos los derechos reservados.</p>
     </div>
 </footer>
+
 
 <script src="app.component.js"></script>

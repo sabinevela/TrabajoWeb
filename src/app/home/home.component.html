@@ -6,221 +6,155 @@
     <title>Nutricionista</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-
 <body class="bg-white text-gray-900">
-    <header style="background-color: #2d742d;" class="text-white p-6 flex flex-col md:flex-row items-center justify-between gap-6">
-        <!-- Sección de texto -->
-        <div class="text-left max-w-lg flex-1">
-            <h1 class="text-3xl font-bold">Quiero ser tu última nutricionista.</h1>
-            <p class="mt-2">
+    <div>
+        <section class="welcome-section p-6 bg-green-700 max-w-4xl mx-auto rounded-lg shadow-lg mt-12">
+            <h2 class="welcome-title text-5xl font-bold text-white text-center animate-moveIn">¡Bienvenido a tu espacio de nutrición!</h2>
+            <p class="mt-4 text-gray-200 text-center">Aquí podrás encontrar todas las herramientas y recursos que necesitas para mejorar tu salud y alcanzar tus metas. ¡Vamos juntos en este camino!</p>
+            <div class="mt-6 grid grid-cols-3 gap-4">
+                <div class="flex justify-center">
+                    <a href="https://www.ejemplo1.com" target="_blank">
+                        <img src="https://i.pinimg.com/736x/ca/84/21/ca8421646f94bf043b2a3f65cef5d0f6.jpg" alt="Imagen 1" class="w-full h-24 object-cover rounded-lg">
+                    </a>
+                </div>
+                <div class="flex justify-center">
+                    <a href="https://www.ejemplo2.com" target="_blank">
+                        <img src="https://i.pinimg.com/736x/b5/b6/f2/b5b6f250c580d99e8c3e5e0e1f414dcb.jpg" alt="Imagen 2" class="w-full h-24 object-cover rounded-lg">
+                    </a>
+                </div>
+                <div class="flex justify-center">
+                    <a href="https://www.ejemplo3.com" target="_blank">
+                        <img src="https://i.pinimg.com/736x/be/17/a0/be17a058f52ac33ccb89ecce1c9d93a9.jpg" alt="Imagen 3" class="w-full h-24 object-cover rounded-lg">
+                    </a>
+                </div>
+            </div>
+        </section>  
+    </div>
+    
+
+    <header class="p-6 flex flex-col md:flex-row items-center justify-between gap-6 bg-white">
+        <div class="bg-[#A8E6CF] p-6 rounded-lg shadow-lg max-w-lg flex-1">
+            <h1 class="text-3xl font-bold text-green-800">Quiero ser tu última nutricionista.</h1>
+            <p class="mt-2 text-gray-700">
                 ¿Te has sentido sin energía últimamente? ¿Quieres mejorar tu alimentación pero no sabes por dónde empezar? 
                 Un nutricionista no es solo alguien que te dice qué comer, sino un guía que te ayuda a encontrar el equilibrio 
                 perfecto para sentirte bien, mejorar tu salud y alcanzar tus objetivos.
             </p>
-            <p class="mt-2">
-                Cada cuerpo es único, y lo que funciona para uno no necesariamente funciona para otro. Un nutricionista te ofrece 
-                un plan personalizado que se adapta a tu estilo de vida, necesidades y metas, ya sea bajar de peso, aumentar masa 
-                muscular, mejorar tu digestión o simplemente adoptar hábitos más saludables.
-            </p>
-            <button class="mt-4 bg-white text-green-600 px-4 py-2 rounded">
+            <button class="mt-4 bg-green-100 text-green-600 px-6 py-3 rounded-lg shadow-md hover:bg-green-200 transition duration-200">
                 Agendar Consulta
             </button>
         </div>
-        <!-- Sección de imagen -->
         <div class="flex-1 flex justify-center">
-            <img src="/assets/img/imagen1.png" 
-                 alt="Nutricionista" 
-                 class="w-full max-w-xs md:max-w-sm rounded-lg shadow-lg">
+            <img src="/assets/img/imagen1.png" alt="Nutricionista" class="w-full max-w-xs md:max-w-sm rounded-lg shadow-xl">
         </div>
     </header>
 
-    
-   
-    <!-- Sobre Mi -->
-    <section id="about"  class="flex flex-col md:flex-row items-center p-6 gap-6">
-        <!-- Imagen a la izquierda -->
-        <div class="w-full md:w-1/2 h-full">
-            <img src="/assets/img/pexels-photo-936611.webp" alt="Nutrición saludable" class="w-full rounded-lg shadow-lg">
-        </div>
-    
-        <!-- Texto a la derecha -->
-        <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left">
-            <h2 class="text-2xl font-bold text-[#2d742d]">Nosotros</h2>
-            <p class="text-lg text-gray-800 leading-relaxed">
-                En <strong>NutriReceta</strong>, creemos que llevar una alimentación saludable no significa renunciar al sabor o la variedad. 
-                Nuestra misión es ayudarte a descubrir recetas equilibradas, deliciosas y adaptadas a tu estilo de vida.
-            </p>
-            <p class="text-lg text-gray-800 leading-relaxed mt-4">
-                Cada persona es única, por eso diseñamos planes y recetas nutritivas que hacen que comer bien sea fácil y placentero. 
-                No se trata de restricciones, sino de aprender a nutrir tu cuerpo con ingredientes naturales y sabores irresistibles.
-            </p>
+    <div id="contact" class="text-center p-6 bg-green-100 text-white flex flex-col items-center gap-4">
+        <h3 class="text-xl font-semibold">Chatea con nosotros</h3>
+        <img src="/assets/img/image6.jpg" alt="Teléfono animado" class="w-16 h-16 animate-bounce">
+        <a href="https://wa.me/1234567890" target="_blank" class="bg-white text-green-600 px-6 py-3 rounded-lg shadow-md hover:bg-green-100 transition duration-200">
+            WhatsApp
+        </a>
+    </div>
+
+    <section id="services" class="p-6 text-center bg-white">
+        <h3 class="text-3xl font-bold text-green-600">Recetas</h3>
+        <div class="flex justify-center gap-8 mt-6">
+            <label for="modal1" class="bg-white shadow-lg p-6 rounded-xl max-w-xs cursor-pointer transform transition duration-200 hover:scale-105">
+                <img src="assets/img/imagen3.jpg" alt="Receta 1" class="w-full h-48 object-cover rounded-md">
+                <h4 class="text-xl font-semibold mt-4">Ensalada de Quinoa con Aguacate y Pollo a la Parrilla</h4>
+            </label>
+
+            <label for="modal2" class="bg-white shadow-lg p-6 rounded-xl max-w-xs cursor-pointer transform transition duration-200 hover:scale-105">
+                <img src="assets/img/imagen4.jpg" alt="Receta 2" class="w-full h-48 object-cover rounded-md">
+                <h4 class="text-xl font-semibold mt-4">Tazón de Yogur Griego con Frutas y Nueces</h4>
+            </label>
+
+            <label for="modal3" class="bg-white shadow-lg p-6 rounded-xl max-w-xs cursor-pointer transform transition duration-200 hover:scale-105">
+                <img src="assets/img/imaggen5.jpg" alt="Receta 3" class="w-full h-48 object-cover rounded-md">
+                <h4 class="text-xl font-semibold mt-4">Salmón al Horno con Espárragos</h4>
+            </label>
         </div>
     </section>
-    
 
-
-<!-- Contacto -->
-<div id="contact" style="background-color: #2d742d;" class="text-center p-6 bg-green-300 text-white flex flex-col items-center gap-4">
-    <h3 class="text-xl font-bold">Chatea con nosotros</h3>
-    <!-- Imagen de teléfono con animación -->
-    <img src="/assets/img/image6.jpg" alt="Teléfono animado" 
-         class="w-16 h-16 animate-bounce">
-
-    <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/1234567890" target="_blank" 
-       class="bg-white text-green-600 px-4 py-2 rounded shadow-lg hover:bg-green-100 transition">
-        WhatsApp
-    </a>
-</div>
-
-
-   <!-- Servicios -->
-<section id="services" class="p-6 text-center">
-    <h3 class="text-2xl font-bold text-[#2d742d]">Recetas</h3>
-    <div class="flex justify-center gap-6 mt-4">
-        <!-- Imagen 1 -->
-        <label for="modal1" class="bg-white shadow p-4 rounded max-w-sm cursor-pointer">
-            <img src="assets/img/imagen3.jpg" alt="Receta 1" class="w-full h-48 object-cover rounded-md">
-            <h4 class="text-xl font-bold mt-4">Ensalada de Quinoa con Aguacate y Pollo a la Parrilla</h4>
-        </label>
-
-        <!-- Imagen 2 -->
-        <label for="modal2" class="bg-white shadow p-4 rounded max-w-sm cursor-pointer">
-            <img src="assets/img/imagen4.jpg" alt="Receta 2" class="w-full h-48 object-cover rounded-md">
-             <h4 class="text-xl font-bold mt-4">Tazón de Yogur Griego con Frutas y Nueces</h4>
-        </label>
-
-        <!-- Imagen 3 -->
-        <label for="modal3" class="bg-white shadow p-4 rounded max-w-sm cursor-pointer">
-            <img src="assets/img/imaggen5.jpg" alt="Receta 3" class="w-full h-48 object-cover rounded-md">
-            <h4 class="text-xl font-bold mt-4">Salmón al Horno con Espárragos</h4>
-        </label>
-    </div>
-</section>
-
-<!-- Modal 1 -->
-<input type="checkbox" id="modal1" class="hidden">
-<div class="modal fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
-    <div class="bg-white p-6 rounded-lg w-1/3">
-        <h3 class="text-2xl font-bold text-green-600">Consulta Premium</h3>
-        <p class="mt-2">Detalles adicionales sobre la consulta Premium...</p>
-
-        <!-- Información Nutricional -->
-        <h4 class="text-xl font-bold text-green-600 mt-4">Información Nutricional</h4>
-        <ul class="list-disc pl-5">
-            <li>Calorías: 250 kcal</li>
-            <li>Proteínas: 20g</li>
-            <li>Carbohidratos: 30g</li>
-            <li>Grasas: 10g</li>
-            <li>Fibra: 5g</li>
-        </ul>
-  <br>
-
-        <label for="modal1" class="mt-4 bg-green-600 text-white px-4 py-2 rounded cursor-pointer">Cerrar</label>
-    </div>
-</div>
-
-<!-- Modal 2 -->
-<input type="checkbox" id="modal2" class="hidden">
-<div class="modal fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
-    <div class="bg-white p-6 rounded-lg w-1/3">
-        <h3 class="text-2xl font-bold text-green-600">Plano Trimestral</h3>
-        <p class="mt-2">Detalles adicionales sobre el plano trimestral...</p>
-
-        <!-- Información Nutricional -->
-        <h4 class="text-xl font-bold text-green-600 mt-4">Información Nutricional</h4>
-        <ul class="list-disc pl-5">
-            <li>Calorías: 300 kcal</li>
-            <li>Proteínas: 25g</li>
-            <li>Carbohidratos: 35g</li>
-            <li>Grasas: 12g</li>
-            <li>Fibra: 6g</li>
-        </ul>
-       <br>
-        <label for="modal2" class="mt-4 bg-green-600 text-white px-4 py-2 rounded cursor-pointer">Cerrar</label>
-    </div>
-</div>
-
-<!-- Modal 3 -->
-<input type="checkbox" id="modal3" class="hidden">
-<div class="modal fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
-    <div class="bg-white p-6 rounded-lg w-1/3">
-        <h3 class="text-2xl font-bold text-green-600">Consulta Inicial</h3>
-        <p class="mt-2">Detalles adicionales sobre la consulta inicial...</p>
-
-        <!-- Información Nutricional -->
-        <h4 class="text-xl font-bold text-green-600 mt-4">Información Nutricional</h4>
-        <ul class="list-disc pl-5">
-            <li>Calorías: 180 kcal</li>
-            <li>Proteínas: 15g</li>
-            <li>Carbohidratos: 22g</li>
-            <li>Grasas: 8g</li>
-            <li>Fibra: 4g</li>
-        </ul>
-     <br>
-        <label for="modal3" class="mt-4 bg-green-600 text-white px-4 py-2 rounded cursor-pointer">Cerrar</label>
-    </div>
-</div>
-<!-- Depoimentos -->
-<section class="p-6 bg-gray-100 text-center">
-    <h3 class="text-2xl font-bold text-[#2d742d]">Comentarios</h3>
-    <div class="flex justify-center gap-6 mt-8">
-        <!-- Comentario 1 -->
-        <div class="bg-white shadow-lg p-6 rounded-lg max-w-sm">
-            <div class="flex justify-center mb-4">
-                <!-- Estrellas de Calificación -->
-                <span class="text-yellow-500">★★★★★</span>
-            </div>
-            <p class="text-lg italic">"¡La consulta de nutrición fue increíble!"</p>
-            <p class="font-bold mt-4">Beatriz Oliveira, 26 años</p>
-        </div>
-
-        <!-- Comentario 2 -->
-        <div class="bg-white shadow-lg p-6 rounded-lg max-w-sm">
-            <div class="flex justify-center mb-4">
-                <!-- Estrellas de Calificación -->
-                <span class="text-yellow-500">★★★★☆</span>
-            </div>
-            <p class="text-lg italic">"Aprendí a alimentarme mejor y ver resultados."</p>
-            <p class="font-bold mt-4">Ana Rodrigues, 28 años</p>
-        </div>
-
-        <!-- Comentario 3 -->
-        <div class="bg-white shadow-lg p-6 rounded-lg max-w-sm">
-            <div class="flex justify-center mb-4">
-                <!-- Estrellas de Calificación -->
-                <span class="text-yellow-500">★★★★★</span>
-            </div>
-            <p class="text-lg italic">"Su método me ayudó a transformar mi salud."</p>
-            <p class="font-bold mt-4">João Santos, 35 años</p>
+    <input type="checkbox" id="modal1" class="hidden">
+    <div class="modal fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg w-1/3">
+            <h3 class="text-2xl font-bold text-green-600">Consulta Premium</h3>
+            <p class="mt-2">Detalles adicionales sobre la consulta Premium...</p>
+            <h4 class="text-xl font-semibold text-green-600 mt-4">Información Nutricional</h4>
+            <ul class="list-disc pl-5">
+                <li>Calorías: 250 kcal</li>
+                <li>Proteínas: 20g</li>
+                <li>Carbohidratos: 30g</li>
+                <li>Grasas: 10g</li>
+                <li>Fibra: 5g</li>
+            </ul>
+            <label for="modal1" class="mt-4 bg-green-500 text-white px-6 py-3 rounded-lg cursor-pointer">Cerrar</label>
         </div>
     </div>
-</section>
 
-<style>
-    .modal {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 50;
-        justify-content: center;
-        align-items: center;
-    }
+    <input type="checkbox" id="modal2" class="hidden">
+    <div class="modal fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg w-1/3">
+            <h3 class="text-2xl font-bold text-green-600">Plano Trimestral</h3>
+            <p class="mt-2">Detalles adicionales sobre el plano trimestral...</p>
+            <h4 class="text-xl font-semibold text-green-600 mt-4">Información Nutricional</h4>
+            <ul class="list-disc pl-5">
+                <li>Calorías: 300 kcal</li>
+                <li>Proteínas: 25g</li>
+                <li>Carbohidratos: 35g</li>
+                <li>Grasas: 12g</li>
+                <li>Fibra: 6g</li>
+            </ul>
+            <label for="modal2" class="mt-4 bg-green-500 text-white px-6 py-3 rounded-lg cursor-pointer">Cerrar</label>
+        </div>
+    </div>
 
-    input[type="checkbox"]:checked + .modal {
-        display: flex;
-    }
+    <input type="checkbox" id="modal3" class="hidden">
+    <div class="modal fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg w-1/3">
+            <h3 class="text-2xl font-bold text-green-600">Consulta Inicial</h3>
+            <p class="mt-2">Detalles adicionales sobre la consulta inicial...</p>
+            <h4 class="text-xl font-semibold text-green-600 mt-4">Información Nutricional</h4>
+            <ul class="list-disc pl-5">
+                <li>Calorías: 180 kcal</li>
+                <li>Proteínas: 15g</li>
+                <li>Carbohidratos: 22g</li>
+                <li>Grasas: 8g</li>
+                <li>Fibra: 4g</li>
+            </ul>
+            <label for="modal3" class="mt-4 bg-green-500 text-white px-6 py-3 rounded-lg cursor-pointer">Cerrar</label>
+        </div>
+    </div>
 
-    label[for="modal1"],
-    label[for="modal2"],
-    label[for="modal3"] {
-        cursor: pointer;
-    }
-</style>
+    <section class="p-6 bg-white text-center">
+        <h3 class="text-3xl font-bold text-green-600">Comentarios</h3>
+        <div class="flex justify-center gap-8 mt-8">
+            <div class="bg-white shadow-lg p-6 rounded-lg max-w-xs">
+                <div class="flex justify-center mb-4">
+                    <span class="text-yellow-500">★★★★★</span>
+                </div>
+                <p class="text-lg italic">"¡La consulta de nutrición fue increíble!"</p>
+                <p class="font-bold mt-4">Beatriz Oliveira, 26 años</p>
+            </div>
 
+            <div class="bg-white shadow-lg p-6 rounded-lg max-w-xs">
+                <div class="flex justify-center mb-4">
+                    <span class="text-yellow-500">★★★★☆</span>
+                </div>
+                <p class="text-lg italic">"Aprendí a alimentarme mejor y ver resultados."</p>
+                <p class="font-bold mt-4">Ana Rodrigues, 28 años</p>
+            </div>
 
-   
+            <div class="bg-white shadow-lg p-6 rounded-lg max-w-xs">
+                <div class="flex justify-center mb-4">
+                    <span class="text-yellow-500">★★★★★</span>
+                </div>
+                <p class="text-lg italic">"Su método me ayudó a transformar mi salud."</p>
+                <p class="font-bold mt-4">João Santos, 35 años</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
-
