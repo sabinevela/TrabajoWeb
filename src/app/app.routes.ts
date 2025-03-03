@@ -3,9 +3,6 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { ContactosComponent } from './contactos/contactos.component';
 import { HomeComponent } from './home/home.component';
-import { FormularioRecetasComponent } from './components/formulario-recetas/formulario-recetas.component';
-import { EditarRecetaComponent } from './pages/editar-receta/editar-receta.component';
-import { RecetasPaginaComponent } from './pages/recetas-pagina/recetas-pagina.component';
 
 export const routes: Routes = [
     {path:'nosotros',
@@ -24,12 +21,6 @@ export const routes: Routes = [
     },
     {path:'home',
         component:HomeComponent
-    },
-    {path:'recetas',
-        component:RecetasPaginaComponent
-    },
-    {path:'recetas/:idRecetas',
-        component:EditarRecetaComponent
     }
     
 ];
