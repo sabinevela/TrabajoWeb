@@ -1,0 +1,36 @@
+.bg-darkgreen {
+    background-color: #006400;
+  }
+  
+  .btn-darkgreen {
+    background-color: #006400;
+    border-color: #004d00;
+  }
+  
+  .btn-darkgreen:hover {
+    background-color: #004d00;
+    border-color: #003300;
+  }
+  
+  .form-control {
+    border-radius: 0.375rem;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .text-darkgreen {
+    color: #006400;
+  }
+  
+  .btn-custom {
+    background-color: #006400;
+    border-color: #004d00;
+  }
+  
+  .btn-custom:hover {
+    background-color: #004d00;
+    border-color: #003300;
+  }
+  

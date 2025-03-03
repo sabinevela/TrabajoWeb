@@ -1,0 +1,42 @@
+<div class="container mt-5">
+  <!-- Introducción con contenedor verde -->
+  <div class="bg-darkgreen text-white p-4 rounded-lg mb-5">
+    <h2 class="text-center mb-4">Bienvenido al Formulario de Recetas</h2>
+    <p class="text-center">
+      Conocer y aprender nuevas recetas es una excelente forma de mejorar nuestra alimentación, explorar nuevas culturas gastronómicas y disfrutar de la cocina casera. Aquí puedes compartir tus propias recetas y probar las de otros.
+    </p>
+  </div>
+
+  <!-- Formulario de Recetas -->
+  <div class="form-container mx-auto shadow-lg p-4 bg-white rounded-lg" style="max-width: 500px;">
+    <h2 class="mb-4 text-center text-dark">Formulario de Recetas</h2>
+    <form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
+      
+      <!-- Campo Nombre -->
+      <div class="mb-3">
+        <label for="nombre" class="form-label text-dark">Nombre</label>
+        <input type="text" class="form-control form-control-sm" id="nombre" name="nombre" [(ngModel)]="nombre" placeholder="Introduce el nombre de la receta" required>
+      </div>
+      
+      <!-- Campo Pasos -->
+      <div class="mb-3">
+        <label for="pasos" class="form-label text-dark">Pasos</label>
+        <textarea class="form-control form-control-sm" id="pasos" name="pasos" [(ngModel)]="pasos" placeholder="Introduce los pasos de la receta" required rows="3"></textarea>
+      </div>
+      
+      <!-- Campo Descripción -->
+      <div class="mb-3">
+        <label for="descripcion" class="form-label text-dark">Descripción</label>
+        <textarea class="form-control form-control-sm" id="descripcion" name="descripcion" [(ngModel)]="descripcion" placeholder="Introduce una descripción de la receta" required rows="3"></textarea>
+      </div>
+      
+      <!-- Botón Enviar con estilo mejorado -->
+      <div class="text-center">
+        <button class="btn btn-darkgreen btn-sm text-white px-4 py-2 rounded-full shadow-lg transition-all hover:bg-green-700 hover:shadow-2xl">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
