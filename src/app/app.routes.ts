@@ -6,7 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { RecetasComponent } from './components/recetas/recetas.component';
 import { EditarRecetaComponent } from './components/editar-receta/editar-receta.component';
 import { RecetasPaginaComponent } from './pages/recetas-pagina/recetas-pagina.component';
-import { SuscripcionComponent } from './pages/suscripcion/suscripcion.component';
+import { FormSuscripcionComponent } from './components/form-suscripcion/form-suscripcion.component';
+import { SuscripcionesComponent } from './components/suscripciones/suscripciones.component';
 
 export const routes: Routes = [
     {path:'nosotros',
@@ -33,8 +34,12 @@ export const routes: Routes = [
         component:EditarRecetaComponent
     },
     {
+        path:'suscripcionForm',
+        component:FormSuscripcionComponent
+    },
+    {
         path:'suscripcion',
-        component:SuscripcionComponent
+        component:SuscripcionesComponent
     }
     
 ];

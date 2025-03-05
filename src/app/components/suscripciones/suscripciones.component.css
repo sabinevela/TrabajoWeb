@@ -1,0 +1,52 @@
+.fixed {
+    z-index: 9999;
+}
+
+img {
+    max-height: 150px;
+    width: auto;
+}
+
+.modal-close-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A5568; /* Gris oscuro */
+}
+
+.modal-close-btn:hover {
+    color: #2D3748; /* Gris más oscuro */
+}
+
+@media (max-width: 768px) {
+    .bg-white {
+        padding: 4px;
+    }
+
+    img {
+        max-height: 120px;
+    }
+
+    .text-2xl {
+        font-size: 1.5rem;
+    }
+
+    .text-3xl {
+        font-size: 2rem;
+    }
+
+    .z-10 {
+        z-index: 10000;
+    }
+}
+.suscripcion-link {
+    color: #38A169; 
+}
+
+.suscripcion-link:hover {
+    color: #2F855A; 
+}
+
+
+
