@@ -1,0 +1,54 @@
+{
+  "recetas": [
+    {
+      "id": "f419",
+      "nombre": "SABBB",
+      "pasos": "algunosss",
+      "descripcion": "jksndjajs"
+    },
+    {
+      "id": "1550",
+      "nombre": "jasja",
+      "pasos": "noquiero",
+      "descripcion": "sjdjksnsnjsjs"
+    },
+    {
+      "id": "7eed",
+      "nombre": "guatita",
+      "pasos": "1 lavas\n2 cocinas\n3 comes\n",
+      "descripcion": "te llena bien la pancita"
+    }
+  ],
+  "nutricionistas": [
+    {
+      "id": "55e9"
+    },
+    {
+      "id": "7044",
+      "nombre": "Freddy",
+      "email": "Freddy@gmail.com",
+      "password": "12345",
+      "titulo": "Nutricionista",
+      "experiencia": "5",
+      "edad": 21
+    },
+    {
+      "id": "ea4e",
+      "nombre": "ROSITA QUEZADA",
+      "email": "quezadarosita76@gmail.com",
+      "password": "12345678",
+      "titulo": "Nutricionista",
+      "experiencia": "10 ",
+      "edad": 6
+    },
+    {
+      "id": "6b7f",
+      "nombre": "jaime",
+      "email": "jaime@gmail.com",
+      "password": "12345",
+      "titulo": "Nutricionista",
+      "experiencia": 3,
+      "edad": 18
+    }
+  ]
+}

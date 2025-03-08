@@ -1,0 +1,53 @@
+<br><br>
+<h2 class="text-4xl font-extrabold text-white text-center bg-green-800 p-8 rounded-t-lg mb-6 shadow-lg">
+    ¡Suscríbete a NutriRecetas!
+  </h2>
+  
+  <div class="container mt-8 px-4">
+    <div class="bg-green-700 text-white p-6 rounded-lg mb-8 shadow-lg">
+      <p class="text-lg font-medium text-center">
+        ¡Bienvenido a nuestra página de nutrición! Únete para recibir consejos, recetas saludables y mucho más. 
+        Al suscribirte, estarás un paso más cerca de llevar una vida más saludable. ¡No te lo pierdas!
+      </p>
+    </div>
+  
+    <div class="mx-auto bg-white shadow-2xl p-8 rounded-lg max-w-lg">
+      <h3 class="text-2xl font-semibold text-center text-green-800 mb-6">Formulario de Suscripción</h3>
+  
+      <form id="suscripcionForm">
+        <div class="mb-6">
+          <label for="nombre" class="text-lg font-medium text-gray-700">Nombre</label>
+          <input type="text" class="p-3 w-full border-2 border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-300" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+        </div>
+  
+        <div class="mb-6">
+          <label for="email" class="text-lg font-medium text-gray-700">Correo Electrónico</label>
+          <input type="email" class="p-3 w-full border-2 border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-700 transition duration-300" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+        </div>
+  
+        <div class="mt-6 text-center">
+          <button type="submit" class="bg-green-800 text-white text-lg px-8 py-3 rounded-lg hover:bg-green-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-700 w-full">
+            Suscribirse
+          </button>
+        </div>
+      </form>
+  
+      <div id="mensajeExito" class="mt-6 text-center text-green-800 font-semibold hidden">
+        <p>¡Usuario registrado con éxito!</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const formulario = document.getElementById('suscripcionForm');
+    const mensajeExito = document.getElementById('mensajeExito');
+  
+    formulario.addEventListener('submit', function(event) {
+      event.preventDefault();
+      mensajeExito.classList.remove('hidden');
+      setTimeout(function() {
+        mensajeExito.classList.add('hidden');
+      }, 3000);
+      formulario.reset();
+    });
+  </script>

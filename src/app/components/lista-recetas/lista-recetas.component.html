@@ -1,0 +1,30 @@
+<div class="container mx-auto p-4">
+  <h1 class="text-3xl font-bold text-center mb-4">Lista de Recetas</h1>
+
+  <div *ngIf="recetas.length === 0" class="text-center text-gray-500">
+    Cargando recetas...
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div *ngFor="let receta of recetas; let i = index" class="bg-white shadow-lg rounded-lg p-4">
+      <h3 class="text-xl font-semibold text-center text-dark mb-2">{{ receta.nombre }}</h3>
+      <p class="text-sm text-gray-600 mb-2"><strong>Pasos:</strong> {{ receta.pasos }}</p>
+      <p class="text-sm text-gray-600 mb-4"><strong>Descripción:</strong> {{ receta.descripcion }}</p>
+      <div class="flex justify-between">
+        <button 
+          class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition-all"
+          (click)="eliminar(receta.id)">
+          Eliminar
+        </button>
+        <button 
+          class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-all"
+          [routerLink]="['/recetas', receta.id]">
+          Editar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

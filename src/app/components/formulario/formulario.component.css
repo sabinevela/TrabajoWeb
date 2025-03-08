@@ -1,0 +1,103 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2, h3, label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+h3.bienvenido {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+h3.mensaje {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #A9A9A9;
+    font-weight: normal;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+}
+
+.card img {
+    border-radius: 50%;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+.form-control {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    color: #333;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.bg-gray-800 {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.rounded-lg {
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.bg-green-600 {
+    background-color: #4CAF50;
+}
+
+.bg-green-700 {
+    background-color: #388E3C;
+}
+
+.bg-green-800 {
+    background-color: #2C6B2F;
+}
+
+.text-green-600 {
+    color: #4CAF50;
+}
+
+.text-green-700 {
+    color: #388E3C;
+}
+
+.text-white {
+    color: white;
+}

@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    background-color: #f0fdf4;
+}
+
+.hero {
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/2479242/pexels-photo-2479242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.content h2 {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.content p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.service-section {
+    background-color: #e8f5e9;
+    padding: 40px 0;
+}
+
+.section-title {
+    font-family: 'Roboto Slab', serif;
+    color: #388e3c;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-deck .col-md-4 {
+    flex: 0 0 30%;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #388e3c;
+}
+.importance-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.importance-section h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #388e3c;
+    font-size: 2rem;
+}
+
+.importance-section p {
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.importance-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
