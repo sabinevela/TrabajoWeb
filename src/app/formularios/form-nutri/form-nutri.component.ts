@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './form-nutri.component.html',
   styleUrl: './form-nutri.component.css'
 })
-export class FormNutriComponent {constructor(private servicio:NutricionistaService){
+export class FormNutriComponent {
+  constructor(private servicio:NutricionistaService){
 
 }
 nombre:any;
