@@ -8,6 +8,8 @@ import { EditarRecetaComponent } from './components/editar-receta/editar-receta.
 import { RecetasPaginaComponent } from './pages/recetas-pagina/recetas-pagina.component';
 import { FormSuscripcionComponent } from './components/form-suscripcion/form-suscripcion.component';
 import { SuscripcionesComponent } from './components/suscripciones/suscripciones.component';
+import { PerfilNutricionistaComponent } from './pages/perfil-nutricionista/perfil-nutricionista.component';
+import { PerfilPacienteComponent } from './pages/perfil-paciente/perfil-paciente.component';
 
 export const routes: Routes = [
     {path:'nosotros',
@@ -40,6 +42,13 @@ export const routes: Routes = [
     {
         path:'suscripcion',
         component:SuscripcionesComponent
+    },
+    {
+        path:'perfilNutri',
+        component:PerfilNutricionistaComponent
+    },
+    {path:'perfilPaciente',
+        component:PerfilPacienteComponent
     }
     
 ];
