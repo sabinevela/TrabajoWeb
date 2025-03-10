@@ -1,6 +1,6 @@
 <br>
 <div class="min-h-screen bg-gray-100 p-6">
-    <div class="bg-green-700 text-white p-6 rounded-lg shadow-lg text-center mb-10">
+    <div class="bg-verde text-white p-6 rounded-lg shadow-lg text-center mb-10">
         <h2 class="text-3xl font-bold">Explora Nuestras Suscripciones</h2>
         <p class="mt-2 text-lg">
             Elige el plan que mejor se adapte a tus necesidades y objetivos. 
@@ -8,36 +8,36 @@
         </p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-green-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-verde">
             <div class="w-full h-40 mb-4 flex justify-center items-center">
                 <img class="object-cover rounded-lg w-full h-full" src="https://i.pinimg.com/736x/4d/15/13/4d1513f02da5d166015603306801b89e.jpg" alt="VIP">
             </div>
-            <h3 class="text-2xl font-bold text-green-800">VIP</h3>
+            <h3 class="text-2xl font-bold text-verde">VIP</h3>
             <p class="mt-2 text-gray-700">Accede a contenido exclusivo y asesoría personalizada para llevar tu bienestar al siguiente nivel.</p>
             <button (click)="abrirModal('vip')" 
-                class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition duration-200">
+                class="mt-4 bg-verde text-white px-4 py-2 rounded-lg shadow-md hover:bg-verde transition duration-200">
                 Ver más
             </button>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-green-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-verde">
             <div class="w-full h-40 mb-4 flex justify-center items-center">
                 <img class="object-cover rounded-lg w-full h-full" src="https://i.pinimg.com/736x/b3/59/22/b35922ca2a10b6161beb8ae485dca62d.jpg" alt="Normal">
             </div>
-            <h3 class="text-2xl font-bold text-green-800">Normal</h3>
+            <h3 class="text-2xl font-bold text-verde">Normal</h3>
             <p class="mt-2 text-gray-700">Plan equilibrado con guías de alimentación saludables y recetas fáciles de seguir.</p>
             <button (click)="abrirModal('normal')" 
-                class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition duration-200">
+                class="mt-4 bg-verde text-white px-4 py-2 rounded-lg shadow-md hover:bg-verde transition duration-200">
                 Ver más
             </button>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-green-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-verde">
             <div class="w-full h-40 mb-4 flex justify-center items-center">
                 <img class="object-cover rounded-lg w-full h-full" src="https://i.pinimg.com/736x/2b/72/00/2b72005daf15fd9e29ad376ddf47a79b.jpg" alt="Deportista">
             </div>
-            <h3 class="text-2xl font-bold text-green-800">Deportista</h3>
+            <h3 class="text-2xl font-bold text-verde">Deportista</h3>
             <p class="mt-2 text-gray-700">Nutrición especializada para atletas que buscan mejorar su rendimiento físico.</p>
             <button (click)="abrirModal('deportista')" 
-                class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition duration-200">
+                class="mt-4 bg-verde text-white px-4 py-2 rounded-lg shadow-md hover:bg-verde transition duration-200">
                 Ver más
             </button>
         </div>
@@ -47,7 +47,7 @@
             <button (click)="cerrarModal()" class="modal-close-btn absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-3xl z-20">
                 &times;
             </button>
-            <h2 class="text-2xl font-bold text-green-800 mb-4">{{ tituloModal }}</h2>
+            <h2 class="text-2xl font-bold text-verde mb-4">{{ tituloModal }}</h2>
             <p class="text-gray-700 text-sm mb-4">
                 {{ tituloModal === 'Suscripción VIP' ? 'Accede a contenido exclusivo y personalizado, donde recibirás asesoría directa de expertos. Este plan está diseñado para quienes buscan un enfoque integral que combine un régimen de alimentación saludable con acompañamiento constante, incluyendo planes de alimentación exclusivos y acceso a contenido premium como recetas y entrenamientos.' :
                    tituloModal === 'Suscripción Normal' ? 'Nuestro plan Normal está orientado a quienes desean mejorar su bienestar general de manera equilibrada. Con un enfoque en la nutrición saludable, recibirás guías personalizadas de alimentación, recetas fáciles de seguir y herramientas para mejorar tu calidad de vida. Ideal para aquellos que buscan mantenerse saludables sin complicaciones.' :
@@ -56,9 +56,12 @@
             <div class="flex flex-wrap gap-4 justify-center">
                 <img *ngFor="let img of imagenesModal" [src]="img" class="max-h-32 w-auto rounded-lg shadow-md">
             </div>
-            <a href="/suscripcionForm" class="mt-4 inline-block text-green-600 font-semibold hover:underline suscripcion-link">
+            <a href="/suscripcionForm" class="mt-4 inline-block text-verde font-semibold hover:underline suscripcion-link">
                 ¿Deseas suscribirte?
             </a>                       
         </div>
     </div>
 </div>
+
+
+

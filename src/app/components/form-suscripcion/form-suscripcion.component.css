@@ -1,0 +1,38 @@
+h2 {
+    background-color: #388E3C;
+    color: white;
+}
+
+.bg-verde {
+    background-color: #388E3C;
+    color: white;
+}
+
+h3 {
+    color: #388E3C;
+}
+
+input, select {
+    border-color: #CBD5E0;
+}
+
+input:focus, select:focus {
+    border-color: #388E3C;
+    outline: none;
+    box-shadow: 0 0 0 2px #388E3C;
+}
+
+button {
+    background-color: #388E3C;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2E7D32;
+}
+
+.mensaje-exito {
+    color: #388E3C;
+}
+

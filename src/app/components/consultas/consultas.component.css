@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .intro-container {
+    background: linear-gradient(135deg, #2E7D32, #388E3C);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .intro-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #388E3C;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1.1rem;
+    color: #388E3C;
+    font-weight: bold;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #388E3C;
+    border-radius: 8px;
+    margin-top: 8px;
+    outline: none;
+  }
+  
+  .form-input:focus {
+    border-color: #4CAF50;
+  }
+  
+  .form-btn {
+    background-color: #388E3C;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .form-btn:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+  }
+  
+  .subscription-link {
+    font-size: 1rem;
+    color: #388E3C;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .subscription-link:hover {
+    color: #4CAF50;
+  }
+  
+  
+  
+  

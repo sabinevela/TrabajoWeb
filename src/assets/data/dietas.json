@@ -1,0 +1,10 @@
+{
+  "dietas": [
+    {
+      "id": 1,
+      "nombre": "Dieta para Bajar de Peso",
+      "pasos": "safa",
+      "descripcion": "saffa"
+    }
+  ]
+}

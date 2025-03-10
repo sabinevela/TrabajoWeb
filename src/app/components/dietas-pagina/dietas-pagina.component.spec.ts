@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormNutriComponent } from './form-nutri.component';
+import { DietasPaginaComponent } from './dietas-pagina.component';
 
-describe('FormNutriComponent', () => {
-  let component: FormNutriComponent;
-  let fixture: ComponentFixture<FormNutriComponent>;
+describe('DietasPaginaComponent', () => {
+  let component: DietasPaginaComponent;
+  let fixture: ComponentFixture<DietasPaginaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FormNutriComponent]
+      imports: [DietasPaginaComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(FormNutriComponent);
+    fixture = TestBed.createComponent(DietasPaginaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

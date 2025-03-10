@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class RecetasService {
 
   constructor(private http: HttpClient) { }
-  private API_RECETAS = 'http://localhost:3000/recetas';
+  private API_RECETAS = 'http://localhost:3004/recetas';
 
   // Método para enviar receta
   postReceta(receta: any): Observable<any> {

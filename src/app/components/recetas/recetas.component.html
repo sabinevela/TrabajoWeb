@@ -1,35 +1,42 @@
 <div class="container mt-5">
-  <div class="bg-darkgreen text-white p-4 rounded-lg mb-5">
-    <h2 class="text-center mb-4">Bienvenido al Formulario de Recetas</h2>
-    <p class="text-center">
-      Conocer y aprender nuevas recetas es una excelente forma de mejorar nuestra alimentación, explorar nuevas culturas gastronómicas y disfrutar de la cocina casera. Aquí puedes compartir tus propias recetas y probar las de otros.
-    </p>
+  <div class="intro-container">
+    <h2 class="intro-title">¡Bienvenido a Nuestro Formulario de Recetas!</h2>
+    <p class="intro-text">¿Te encanta experimentar en la cocina? Aquí puedes compartir tus recetas favoritas y descubrir nuevas ideas para deleitar tu paladar. ¡Vamos a cocinar juntos y a disfrutar de la buena comida!</p>
+    <p class="intro-text">Completa este formulario para compartir tus recetas con nosotros y ser parte de nuestra comunidad de cocineros. ¡No dudes en agregar los mejores sabores!</p>
   </div>
-  <div class="form-container mx-auto shadow-lg p-4 bg-white rounded-lg" style="max-width: 500px;">
-    <h2 class="mb-4 text-center text-dark">Formulario de Recetas</h2>
+
+  <div class="form-container">
+    <h3 class="form-title">Formulario para Compartir Recetas</h3>
+    
     <form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
-      <div class="mb-3">
-        <label for="nombre" class="form-label text-dark">Nombre</label>
-        <input type="text" class="form-control form-control-sm" id="nombre" name="nombre" [(ngModel)]="nombre" placeholder="Introduce el nombre de la receta" required>
+      <div class="form-group">
+        <label for="nombre">Nombre de la receta</label>
+        <input type="text" class="form-input" id="nombre" name="nombre" [(ngModel)]="nombre" placeholder="Introduce el nombre de la receta" required>
       </div>
-      <div class="mb-3">
-        <label for="pasos" class="form-label text-dark">Pasos</label>
-        <textarea class="form-control form-control-sm" id="pasos" name="pasos" [(ngModel)]="pasos" placeholder="Introduce los pasos de la receta" required rows="3"></textarea>
+      
+      <div class="form-group">
+        <label for="pasos">Pasos</label>
+        <textarea class="form-input" id="pasos" name="pasos" [(ngModel)]="pasos" placeholder="Introduce los pasos de la receta" required rows="4"></textarea>
       </div>
-      <div class="mb-3">
-        <label for="descripcion" class="form-label text-dark">Descripción</label>
-        <textarea class="form-control form-control-sm" id="descripcion" name="descripcion" [(ngModel)]="descripcion" placeholder="Introduce una descripción de la receta" required rows="3"></textarea>
+      
+      <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea class="form-input" id="descripcion" name="descripcion" [(ngModel)]="descripcion" placeholder="Introduce una breve descripción de la receta" required rows="3"></textarea>
       </div>
+
       <div class="text-center">
-        <button class="btn btn-darkgreen btn-sm text-white px-4 py-2 rounded-full shadow-lg transition-all hover:bg-green-700 hover:shadow-2xl">
-          Enviar
-        </button>
+        <button class="form-btn">Enviar receta</button>
       </div>
     </form>
-    <div class="text-center mt-4">
-      <a href="/suscripcion" class="text-darkgreen font-weight-bold">¿Deseas suscribirte a nuestros programas?</a>
+
+    <div class="text-center mt-5">
+      <a href="/suscripcion" class="subscription-link">¿Te gustaría recibir más recetas? ¡Suscríbete ahora!</a>
     </div>
   </div>
 </div>
+
+
+
+
 
 

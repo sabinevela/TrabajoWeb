@@ -1,0 +1,51 @@
+body {
+    background-color: #f7fafc;
+}
+
+.bg-green-custom {
+    background-color: #2E7D32;
+    border: 2px solid #2E7D32;
+}
+
+.text-green-custom {
+    color: #2E7D32;
+}
+
+.text-green-hover:hover {
+    color: #1B5E20;
+}
+
+.focus-green-custom:focus {
+    outline: none;
+    border-color: #2E7D32;
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.5);
+}
+
+.bg-green-custom-button {
+    background-color: #2E7D32;
+    color: white;
+}
+
+.bg-green-custom-button:hover {
+    background-color: #1B5E20;
+}
+
+.container-form {
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+  

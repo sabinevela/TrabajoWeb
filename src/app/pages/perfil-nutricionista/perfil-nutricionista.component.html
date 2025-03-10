@@ -7,7 +7,6 @@
                 Aquí podrás gestionar tus consultas, ver tu plan nutricional y más. ¡Comienza ahora!
             </p>
         </div>
-
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card shadow-lg border-0 rounded-lg profile-card">
@@ -29,7 +28,7 @@
                 <a href="#" class="block px-5 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Editar Perfil</a>
             </li>
             <li class="inline-block">
-                <a href="#" class="block px-5 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Cerrar sesión</a>
+                <a (click)="logout()" class="block px-5 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Cerrar sesión</a>
             </li>
         </ul>
     </div>
@@ -46,16 +45,19 @@
             </div>
         
             <div class="d-flex justify-content-center flex-wrap">
-                <a href="/consulta" class="btn btn-success mx-3 my-2 w-100 w-sm-25 rounded-pill shadow-lg transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-600 hover:text-white text-center py-3 px-4">
-                    <i class="fas fa-calendar-check mr-2"></i> Solicitar Consulta
+                <a href="/dietas" class="btn btn-success mx-3 my-2 w-100 w-sm-25 rounded-pill shadow-lg transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-600 hover:text-white text-center py-3 px-4">
+                    <i class="fas fa-calendar-check mr-2"></i> Subir Dietas
                 </a>
         
-                <a href="/plan-nutricional" class="btn btn-outline-success mx-3 my-2 w-100 w-sm-25 rounded-pill shadow-lg transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-600 hover:text-white text-center py-3 px-4">
-                    <i class="fas fa-chart-pie mr-2"></i> Ver Plan Nutricional
+                <a href="/listaDietas" class="btn btn-outline-success mx-3 my-2 w-100 w-sm-25 rounded-pill shadow-lg transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-600 hover:text-white text-center py-3 px-4">
+                    <i class="fas fa-chart-pie mr-2"></i> Ver Dietas
                 </a>
         
-                <a href="/informacion" class="btn btn-success mx-3 my-2 w-100 w-sm-25 rounded-pill shadow-lg transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-600 hover:text-white text-center py-3 px-4">
-                    <i class="fas fa-info-circle mr-2"></i> Ver Información Adicional
+                <a href="/listaConsultas" class="btn btn-success mx-3 my-2 w-100 w-sm-25 rounded-pill shadow-lg transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-600 hover:text-white text-center py-3 px-4">
+                    <i class="fas fa-info-circle mr-2"></i> Ver Consultas
+                </a>
+                <a href="/pacientes" class="btn btn-outline-success mx-3 my-2 w-100 w-sm-25 rounded-pill shadow-lg transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-600 hover:text-white text-center py-3 px-4">
+                    <i class="fas fa-chart-pie mr-2"></i> Ver Pacientes
                 </a>
             </div>
         </div>

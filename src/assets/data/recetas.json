@@ -1,22 +1,10 @@
 {
   "recetas": [
     {
-      "id": "38af",
-      "nombre": "plato",
-      "pasos": "1) cocinar\n2) no se",
-      "descripcion": "este plato contiene estao etc"
-    },
-    {
-      "id": "da68",
-      "nombre": "hhh",
-      "pasos": "sdbfms",
-      "descripcion": "snfbsm"
-    },
-    {
-      "id": "8c0c",
-      "nombre": "no se",
-      "pasos": "alguno",
-      "descripcion": "jsakndjkas"
+      "id": 1,
+      "nombre": "SABINE",
+      "pasos": "JKSBFJSKA",
+      "descripcion": "ASJKBFJKSA"
     }
   ]
 }

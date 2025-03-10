@@ -1,3 +1,25 @@
+/* Estilos para el color verde #388E3C */
+.bg-verde {
+    background-color: #388E3C;
+}
+
+.text-verde {
+    color: #388E3C;
+}
+
+.hover\:bg-verde:hover {
+    background-color: #388E3C;
+}
+
+.suscripcion-link {
+    color: #388E3C;
+}
+
+.suscripcion-link:hover {
+    color: #388E3C;
+}
+
+/* Estilos generales */
 .fixed {
     z-index: 9999;
 }
@@ -12,11 +34,11 @@ img {
     right: 10px;
     font-size: 24px;
     font-weight: bold;
-    color: #4A5568; /* Gris oscuro */
+    color: #4A5568; 
 }
 
 .modal-close-btn:hover {
-    color: #2D3748; /* Gris más oscuro */
+    color: #2D3748; 
 }
 
 @media (max-width: 768px) {
@@ -40,13 +62,3 @@ img {
         z-index: 10000;
     }
 }
-.suscripcion-link {
-    color: #38A169; 
-}
-
-.suscripcion-link:hover {
-    color: #2F855A; 
-}
-
-
-
