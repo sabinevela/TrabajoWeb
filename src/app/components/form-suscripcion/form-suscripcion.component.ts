@@ -15,8 +15,17 @@ export class FormSuscripcionComponent {
   email: string = '';
   membresia: string = 'normal';
   mensajeExito: boolean = false;
+  mostrarFactura: boolean = false;
+  factura: any = {};
 
   constructor(private servicio: FirebaseService) {}
+
+  resetFormulario(): void {
+    this.nombre = '';
+    this.email = '';
+    this.membresia = 'normal';
+  }
+  
 
   guardar(formulario: any): void {
     const usuario = {
@@ -27,22 +36,29 @@ export class FormSuscripcionComponent {
     
     this.servicio.postUsuario(usuario).subscribe(() => {
       this.mensajeExito = true;
+      this.factura = { ...usuario, fecha: new Date().toLocaleString() };
+      this.mostrarFactura = true;
+      
       setTimeout(() => {
         this.mensajeExito = false;
       }, 3000);
-      this.resetFormulario();
     });
   }
 
-  resetFormulario(): void {
-    this.nombre = '';
-    this.email = '';
-    this.membresia = 'normal';
+  cerrarFactura(): void {
+    this.mostrarFactura = false;
+    this.resetFormulario();
   }
+  
 
-  ngOnInit(): void {
-    this.servicio.getUsuario().subscribe(u => {
-      console.log(u);
-    });
+  descargarFactura(): void {
+    const contenido = `Factura de Suscripción\n\nNombre: ${this.factura.nombre}\nEmail: ${this.factura.email}\nMembresía: ${this.factura.membresia}\nFecha: ${this.factura.fecha}`;
+    const blob = new Blob([contenido], { type: 'text/plain' });
+    const enlace = document.createElement('a');
+    enlace.href = URL.createObjectURL(blob);
+    enlace.download = 'factura_suscripcion.txt';
+    enlace.click();
+    URL.revokeObjectURL(enlace.href);
   }
 }
+

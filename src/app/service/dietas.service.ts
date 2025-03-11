@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DietasService {
-  private API_DIETAS ='http://localhost:3002/dietas'; 
+  private API_DIETAS ='http://localhost:3001/dietas'; 
 
   constructor(private http: HttpClient) {}
 
