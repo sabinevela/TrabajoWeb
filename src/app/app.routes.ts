@@ -17,6 +17,7 @@ import { ListaDietasComponent } from './components/lista-dietas/lista-dietas.com
 import { EditarDietaComponent } from './components/editar-dieta/editar-dieta.component';
 import { ConsultasComponent } from './components/consultas/consultas.component';
 import { ListaConsultasComponent } from './components/lista-consultas/lista-consultas.component';
+import { TiendaComponent } from './pages/tienda/tienda.component';
 
 
 
@@ -84,6 +85,10 @@ export const routes: Routes = [
     },
     {path:'listaConsultas',
         component:ListaConsultasComponent
+    },
+    {
+        path:'tienda',
+        component:TiendaComponent
     }
 
     
