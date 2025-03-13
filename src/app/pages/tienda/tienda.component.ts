@@ -21,7 +21,9 @@ export class TiendaComponent {
     { id: 7, nombre: 'Pasta Integral con Pesto', precio: 11, imagen: 'https://i.pinimg.com/736x/bd/6f/1f/bd6f1f3d56f8dd25174337d325cbf4b3.jpg' },
     { id: 8, nombre: 'Pizza de Vegetales', precio: 15, imagen: 'https://i.pinimg.com/736x/ab/46/2f/ab462fb58e22d7ea59ed26967dd77933.jpg' },
     { id: 9, nombre: 'Hamburguesa Vegana', precio: 13, imagen: 'https://i.pinimg.com/736x/71/00/eb/7100eb3a6d6a5ae5a48ba0129699496c.jpg' },
-    { id: 10, nombre: 'Tartar de Atún', precio: 18, imagen: 'https://i.pinimg.com/736x/2e/e6/c1/2ee6c173719dc678b3008149f7673bc4.jpg' }
+    { id: 10, nombre: 'Tartar de Atún', precio: 18, imagen: 'https://i.pinimg.com/736x/2e/e6/c1/2ee6c173719dc678b3008149f7673bc4.jpg' },
+    { id: 11, nombre: 'Filete de salmón con espárragos y arroz integral', precio: 22, imagen: 'https://storage.googleapis.com/fitia_public_images/recipes%2FGR-R-V-00000458_bed88tfwt6fq8iovlbwx986j_large.jpg'},
+    { id: 12, nombre: 'Chips de manzana al horno', precio: 4, imagen: 'https://7diasdesabor.com/wp-content/uploads/2021/12/apple-chips.jpg'}
   ];
   
   carrito: any[] = [];

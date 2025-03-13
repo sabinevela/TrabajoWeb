@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RecetasService } from '../../service/recetas.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { RecetaSServiceService } from '../../service/receta.s-service.service';
 
 @Component({
   selector: 'app-lista-recetas',
@@ -13,17 +14,17 @@ import { RouterModule } from '@angular/router';
 export class ListaRecetasComponent {
   recetas: any[] = [];
 
-  constructor(private servicio: RecetasService) {}
+  constructor(private servicio: RecetaSServiceService) {}
 
   ngOnInit() {
-    this.servicio.getReceta().subscribe(receta =>
-       {this.recetas = receta;
-    });
-
+    this.obtenerRecetas();
+    
     }
-    eliminar(id:any){
-      this.servicio.deleteReceta(id).subscribe(()=>{
-        window.location.reload();
-      });  
+
+  obtenerRecetas(){
+    this.servicio.getRecetas().subscribe(data=>{
+      this.recetas=data;
+    })
   }
+
 }
