@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { RegistroPacienteService } from '../../service/registropaciente.service';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-inicio-pacientes',
@@ -11,18 +11,15 @@ import { FormsModule, NgForm } from '@angular/forms';
   imports: [FormsModule],
 })
 export class InicioPacientesComponent {
-  nombre: any;
-  email: any;
-  password: any;
-  genero: any;
-
+  nombre: string = '';
+  email: string = '';
+  password: string = '';
 
   constructor(private servicio: RegistroPacienteService, private route: Router) {}
 
   register() {
     if (this.email && this.password) {
-      const user = { nombre: this.nombre, email: this.email, password: this.password, genero: this.genero };
-      
+      const user = { nombre: this.nombre, email: this.email, password: this.password };
       this.servicio.postRegistro(user).subscribe(
         (acceso) => {
           const token = acceso.accessToken;
@@ -31,9 +28,13 @@ export class InicioPacientesComponent {
             this.route.navigate(['sesionPaciente']);
           }
         },
+        (error) => console.error('Error en el registro', error)
       );
     }
   }
 }
+
+
+
 
 

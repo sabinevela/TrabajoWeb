@@ -5,17 +5,23 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class LoginPacienteService {
-  private API_LOGIN = "http://localhost:3000/login";
+export class LoginPacienteService { 
+  private API_LOGIN = 'http://localhost:3000/login';
 
   constructor(private http: HttpClient) {}
+
+  getUserDataByEmail(email: string): Observable<any> {
+    return this.http.get(`${this.API_LOGIN}?email=${email}`);
+  }
 
   getLogin(): Observable<any> {
     return this.http.get(this.API_LOGIN);
   }
 
-
   postLogin(usuario: any): Observable<any> {
     return this.http.post(this.API_LOGIN, usuario);
   }
 }
+
+
+

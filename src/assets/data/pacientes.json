@@ -1,14 +1,10 @@
 {
   "users": [
     {
-      "email": "mariavelazques@gmail.com",
-      "password": "$2a$10$gCglX2AEiRDGl8/SD4PLXunlYU8nYLtGgE04HEDH5HWGlyy4W4.kO",
-      "id": 4
-    },
-    {
-      "email": "sabine@gmail.com",
-      "password": "$2a$10$tzbTytWzq6cYDWNOspV.hetzXd0zg8o7D0lYB5d2Hvqf3Md043gnq",
-      "id": 5
+      "email": "srjsab5@gmail.com",
+      "password": "$2a$10$NeR0flX4Z3F.L9bReDrM4eVtn8F.sSd.qCVim0H02evuALo.8u4pG",
+      "nombre": "sabine vela bermeo francis",
+      "id": 1
     }
   ]
 }
