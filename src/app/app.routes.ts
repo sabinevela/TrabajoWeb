@@ -18,6 +18,10 @@ import { EditarDietaComponent } from './components/editar-dieta/editar-dieta.com
 import { ConsultasComponent } from './components/consultas/consultas.component';
 import { ListaConsultasComponent } from './components/lista-consultas/lista-consultas.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
+import { PerfilesNutrisComponent } from './pages/perfiles-nutris/perfiles-nutris.component';
+import { DetallesnutrisComponent } from './pages/detallesnutris/detallesnutris.component';
+import { RegistroPacienteService } from './service/registropaciente.service';
+import { InicioPacientesComponent } from './components/inicio-pacientes/inicio-pacientes.component';
 
 
 
@@ -89,6 +93,17 @@ export const routes: Routes = [
     {
         path:'tienda',
         component:TiendaComponent
+    },
+    {
+        path:'perfilesNutriologos',
+        component:PerfilesNutrisComponent
+    },
+    {
+        path:'detallesNutris',
+        component:DetallesnutrisComponent
+    },
+    {path:'registerPaciente',
+        component:InicioPacientesComponent
     }
 
     

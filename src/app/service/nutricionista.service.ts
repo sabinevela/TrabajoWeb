@@ -8,13 +8,13 @@ import { Observable } from 'rxjs';
 export class NutricionistaService {
 
   constructor(private http: HttpClient) { }
-  private API_NUTRICIONISTAS = 'http://localhost:3000/nutricionistas'
+  private API_NUTRICIONISTAS = 'http://localhost:3000/login'
   // metodo para agregar nutricionistas
   postNutricionista(nutricionista:any):Observable<any>{
     return this.http.post(this.API_NUTRICIONISTAS, nutricionista);
   }
   //Metodo para ver todas las recetas
-  getReceta(): Observable<any> {
+  getNutricionista(): Observable<any> {
     return this.http.get(this.API_NUTRICIONISTAS);
   }
    // Método para eliminar receta

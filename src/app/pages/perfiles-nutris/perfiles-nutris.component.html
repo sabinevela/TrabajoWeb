@@ -1,0 +1,40 @@
+<br><br>
+<div class="presentation">
+  <h2>Bienvenidos a la sección de Nutriólogos</h2>
+  <p>
+    Aquí encontrarás a nuestros expertos en nutrición, cada uno con su propia especialidad y experiencia para brindarte la mejor asesoría. 
+    Explora sus perfiles y conoce más sobre su formación, experiencia y cómo pueden ayudarte a mejorar tu alimentación y bienestar.
+  </p>
+</div>
+
+<div class="grid-container">
+  <div *ngFor="let nutriologo of nutriologos" class="card">
+    <img [src]="nutriologo.imagen" alt="Imagen del nutriólogo">
+    <h5>{{ nutriologo.nombre }}</h5>
+    <p><strong>Especialidad:</strong> {{ nutriologo.especialidad }}</p>
+    <button (click)="abrirModal(nutriologo)">Ver más</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div *ngIf="modalAbierto" class="modal-overlay">
+  <div class="modal-content">
+    <button class="close-btn" (click)="cerrarModal()">×</button>
+    <h2>{{ nutriologoSeleccionado?.nombre }}</h2>
+    <img [src]="nutriologoSeleccionado?.imagen" alt="Imagen del nutriólogo">
+    <p><strong>Especialidad:</strong> {{ nutriologoSeleccionado?.especialidad }}</p>
+    <p><strong>Experiencia:</strong> {{ nutriologoSeleccionado?.experiencia }}</p>
+    <p><strong>Estudios:</strong> {{ nutriologoSeleccionado?.estudios }}</p>
+    <p><strong>Contacto:</strong> {{ nutriologoSeleccionado?.contacto }}</p>
+    <button (click)="cerrarModal()">Cerrar</button>
+  </div>
+</div>
+
+
+  
+  
+  
+  
+  
+  
+  

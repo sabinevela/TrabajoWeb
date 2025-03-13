@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { RecetasService } from '../../service/recetas.service';
+import { RecetaSServiceService } from '../../service/receta.s-service.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { RecetaSServiceService } from '../../service/receta.s-service.service';
 
 @Component({
   selector: 'app-lista-recetas',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './lista-recetas.component.html',
-  styleUrl: './lista-recetas.component.css'
+  styleUrls: ['./lista-recetas.component.css']
 })
 export class ListaRecetasComponent {
   recetas: any[] = [];
@@ -18,13 +17,27 @@ export class ListaRecetasComponent {
 
   ngOnInit() {
     this.obtenerRecetas();
-    
-    }
-
-  obtenerRecetas(){
-    this.servicio.getRecetas().subscribe(data=>{
-      this.recetas=data;
-    })
   }
 
+  obtenerRecetas() {
+    this.servicio.getRecetas().subscribe(data => {
+      this.recetas = data;
+    });
+  }
+
+  eliminarRecetas(id: number) {
+    this.servicio.deleteRecetas(id).subscribe(() => {
+      this.obtenerRecetas();
+    });
+  }
+
+  actualizarReceta(id: number, receta: any) {
+    this.servicio.updateRecetas(id, receta).subscribe(() => {
+      this.obtenerRecetas();
+    });
+  }
 }
+
+
+
+

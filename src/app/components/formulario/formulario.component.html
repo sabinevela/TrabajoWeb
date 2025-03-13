@@ -1,90 +1,82 @@
-<br><br><br>
+<br><br>
 <div class="container mx-auto p-6 max-w-xl">
-    <div class="card shadow-lg mb-6 bg-green-800 rounded-md p-6">
-      <div class="flex items-center justify-center mb-4">
-      </div>
+  <div class="card shadow-lg mb-6 bg-green-800 rounded-md p-6">
       <h3 class="bienvenido text-center mt-4 mb-4 text-white">Bienvenido a la Calculadora Nutricional</h3>
       <h3 class="mensaje text-center mt-4 mb-4 text-white">Donde podrás tener una visión de tu objetivo</h3>
-    </div>
-  
-    <div class="card shadow-lg mb-6 bg-white rounded-md p-6">
-      <p class="text-gray-600 text-center mt-4">Este formulario te ayudará a calcular tus necesidades calóricas diarias y la cantidad de macronutrientes recomendados para lograr tu objetivo, ya sea perder peso, mantenerlo o ganar músculo. ¡Empieza ahora y conoce cómo mejorar tu nutrición!</p>
-      <div class="flex justify-between mt-6">
-        <img src="https://i.pinimg.com/736x/9e/02/af/9e02af8eaff126437ff1d8b020047c57.jpg" alt="Comida saludable" class="w-1/3 h-48 object-cover rounded-lg shadow-md">
-        <img src="https://i.pinimg.com/736x/e4/2d/c2/e42dc2777f2164bf3709ba55df6d3559.jpg" alt="Entrenamiento" class="w-1/3 h-48 object-cover rounded-lg shadow-md">
-        <img src="https://i.pinimg.com/736x/a7/f1/98/a7f198f78a266ca47e18d53952487c03.jpg" alt="Ejercicio físico" class="w-1/3 h-48 object-cover rounded-lg shadow-md">
-      </div>
-    </div>
-  
-    <div class="card shadow-lg p-6 bg-white rounded-md max-w-md mx-auto">
-      <h2 class="text-2xl font-bold text-center text-green-600 mb-6">Calculadora Nutricional</h2>
-  
-      <form [formGroup]="calculadoraForm" (ngSubmit)="calcular()" class="space-y-4">
-        <div class="mb-4">
-          <label class="block text-green-600 font-semibold">Edad:</label>
-          <input type="number" formControlName="edad" class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500" />
-        </div>
-  
-        <div class="mb-4">
-          <label class="block text-green-600 font-semibold">Sexo:</label>
-          <select formControlName="sexo" class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500">
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-          </select>
-        </div>
-  
-        <div class="mb-4">
-          <label class="block text-green-600 font-semibold">Peso (kg):</label>
-          <input type="number" formControlName="peso" class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500" />
-        </div>
-  
-        <div class="mb-4">
-          <label class="block text-green-600 font-semibold">Altura (cm):</label>
-          <input type="number" formControlName="altura" class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500" />
-        </div>
-  
-        <div class="mb-4">
-          <label class="block text-green-600 font-semibold">Nivel de Actividad:</label>
-          <select formControlName="actividad" class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500">
-            <option value="1.2">Sedentario</option>
-            <option value="1.375">Ejercicio ligero</option>
-            <option value="1.55">Ejercicio moderado</option>
-            <option value="1.725">Ejercicio intenso</option>
-            <option value="1.9">Atleta</option>
-          </select>
-        </div>
-  
-        <div class="mb-6">
-          <label class="block text-green-600 font-semibold">Objetivo:</label>
-          <select formControlName="objetivo" class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500">
-            <option value="perder">Perder peso</option>
-            <option value="mantener">Mantener peso</option>
-            <option value="ganar">Ganar músculo</option>
-          </select>
-        </div>
-  
-        <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-md hover:bg-green-700 transition duration-200">Calcular</button>
-      </form>
-    </div>
-  
-    <div *ngIf="mostrarModal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-      <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-        <h3 class="font-bold text-xl mb-4 text-green-600">Resultados:</h3>
-        <p>Calorías diarias: <strong>{{ resultado.calorias }}</strong></p>
-        <p>Proteínas: <strong>{{ resultado.proteinas }}g</strong></p>
-        <p>Grasas: <strong>{{ resultado.grasas }}g</strong></p>
-        <p>Carbohidratos: <strong>{{ resultado.carbohidratos }}g</strong></p>
-        <button (click)="cerrarModal()" class="mt-4 w-full bg-red-500 text-white py-2 rounded-md hover:bg-red-600 transition duration-200">Cerrar</button>
-      </div>
-    </div>
-  
-    <div *ngIf="mostrarModalAdvertencia" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-      <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-        <h3 class="font-bold text-xl mb-4 text-red-600 text-center">Advertencia</h3>
-  
-        <p class="text-center">Tu peso está fuera del rango saludable para tu objetivo. Es importante que consultes con tu nutriologo antes de realizar cambios en tu dieta o actividad física.</p>
-        <button (click)="cerrarModalAdvertencia()" class="mt-4 w-full bg-red-500 text-white py-2 rounded-md hover:bg-red-600 transition duration-200">Cerrar</button>
-      </div>
-    </div>
   </div>
+
+  <div class="card shadow-lg mb-6 bg-white rounded-md p-6">
+      <p class="text-gray-600 text-center mt-4">
+          Este formulario te ayudará a calcular tus necesidades calóricas diarias y la cantidad de macronutrientes recomendados para lograr tu objetivo, ya sea perder peso, mantenerlo o ganar músculo.
+      </p>
+      <div class="grid grid-cols-3 gap-4 mt-6">
+          <img src="https://i.pinimg.com/736x/9e/02/af/9e02af8eaff126437ff1d8b020047c57.jpg" alt="Comida saludable"
+              class="w-full h-40 object-cover rounded-lg shadow-md">
+          <img src="https://i.pinimg.com/736x/e4/2d/c2/e42dc2777f2164bf3709ba55df6d3559.jpg" alt="Entrenamiento"
+              class="w-full h-40 object-cover rounded-lg shadow-md">
+          <img src="https://i.pinimg.com/736x/a7/f1/98/a7f198f78a266ca47e18d53952487c03.jpg" alt="Ejercicio físico"
+              class="w-full h-40 object-cover rounded-lg shadow-md">
+      </div>
+  </div>
+
+  <div class="card shadow-lg p-6 bg-white rounded-md max-w-md mx-auto">
+      <h2 class="text-2xl font-bold text-center text-green-600 mb-6">Calculadora Nutricional</h2>
+
+      <form [formGroup]="calculadoraForm" (ngSubmit)="calcular()" class="space-y-4">
+          <div class="mb-4">
+              <label class="block text-green-600 font-semibold">Edad:</label>
+              <input type="number" formControlName="edad"
+                  class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500" />
+          </div>
+
+          <div class="mb-4">
+              <label class="block text-green-600 font-semibold">Sexo:</label>
+              <select formControlName="sexo"
+                  class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500">
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+              </select>
+          </div>
+
+          <div class="mb-4">
+              <label class="block text-green-600 font-semibold">Peso (kg):</label>
+              <input type="number" formControlName="peso"
+                  class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500" />
+          </div>
+
+          <div class="mb-4">
+              <label class="block text-green-600 font-semibold">Altura (cm):</label>
+              <input type="number" formControlName="altura"
+                  class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500" />
+          </div>
+
+          <div class="mb-4">
+              <label class="block text-green-600 font-semibold">Nivel de Actividad:</label>
+              <select formControlName="actividad"
+                  class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500">
+                  <option value="1.2">Sedentario</option>
+                  <option value="1.375">Ejercicio ligero</option>
+                  <option value="1.55">Ejercicio moderado</option>
+                  <option value="1.725">Ejercicio intenso</option>
+                  <option value="1.9">Atleta</option>
+              </select>
+          </div>
+
+          <div class="mb-6">
+              <label class="block text-green-600 font-semibold">Objetivo:</label>
+              <select formControlName="objetivo"
+                  class="form-control border border-green-300 rounded-md p-3 focus:ring-2 focus:ring-green-500">
+                  <option value="perder">Perder peso</option>
+                  <option value="mantener">Mantener peso</option>
+                  <option value="ganar">Ganar músculo</option>
+              </select>
+          </div>
+
+          <button type="submit"
+              class="w-full bg-green-600 text-white py-3 rounded-md hover:bg-green-700 transition duration-200">Calcular</button>
+      </form>
+  </div>
+</div>
+
+
   

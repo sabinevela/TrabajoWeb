@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ConsultasService } from '../../service/consultas.service';
 import { CommonModule } from '@angular/common';
+import { ConsultasConeService } from '../../service/consultas-cone.service';
 
 @Component({
   selector: 'app-lista-consultas',
@@ -12,22 +13,33 @@ import { CommonModule } from '@angular/common';
 export class ListaConsultasComponent implements OnInit {
   consultas: any[] = [];
 
-  constructor(private servicio: ConsultasService) {}
+  constructor(private servicio: ConsultasConeService) {}
 
   ngOnInit() {
-    this.servicio.getConsulta().subscribe((consulta) => {
+    this.servicio.getConsultas().subscribe((consulta) => {
       this.consultas = consulta;
     });
   }
 
-  eliminar(id: any) {
-    this.servicio.deleteConsulta(id).subscribe(() => {
-      this.consultas = this.consultas.filter(consulta => consulta.id !== id);
+  obtenerConsultas() {
+    this.servicio.getConsultas().subscribe(data => {
+      this.consultas = data;
     });
   }
 
-  getConsulta(consulta: any) {
-    alert(`Detalles de la consulta: \nNombre: ${consulta.nombre}\nCorreo: ${consulta.email}\nMensaje: ${consulta.mensaje}`);
+  eliminarConsultas(id: number) {
+    this.servicio.deleteConsultas(id).subscribe(() => {
+      this.obtenerConsultas();
+    });
+  }
+
+  actualizarConsultas(id: number, consulta: any) {
+    this.servicio.updateConsultas(id, consulta).subscribe(() => {
+      this.obtenerConsultas();
+    });
   }
 }
+
+
+
 

@@ -17,7 +17,7 @@ export class EditarRecetaComponent {
   ruta = inject(ActivatedRoute);
 
   id: any;
-  nombre: any;
+  titulo: any;
   pasos: any;
   descripcion: any;
   item: any;
@@ -33,7 +33,7 @@ export class EditarRecetaComponent {
       this.servicio.getRecetaById(r["idRecetas"]).subscribe(recetas => {
         this.item = recetas;
         this.id = this.item.id;
-        this.nombre = this.item.nombre;
+        this.titulo = this.item.titulo;
         this.pasos = this.item.pasos;
         this.descripcion = this.item.descripcion;
       });

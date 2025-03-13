@@ -6,7 +6,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RecetaSServiceService {
-
   private apiUrl = "http://localhost:8080/recetas";
 
   constructor(private http: HttpClient) { }
@@ -20,8 +19,9 @@ export class RecetaSServiceService {
   }
 
   updateRecetas(id: number, receta: any): Observable<any> {
-    return this.http.put<any>(`${this.apiUrl}/actualizar/${id}`, receta);
-  }
+    return this.http.put<any>(`${this.apiUrl}/recetas/actualizar/${id}`, receta);
+}
+
 
   postRecetas(receta: any): Observable<any> {
     return this.http.post<any>(`${this.apiUrl}/guardar`, receta);
