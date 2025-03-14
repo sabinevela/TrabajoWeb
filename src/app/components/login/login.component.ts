@@ -13,8 +13,16 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  email: any;
-  password: any;
+  email: string = '';
+  password: string = '';
+
+  private perfiles: { [key: string]: string } = {
+    'juanperez@gmail.com': 'perfilNutri',
+    'analopez@gmail.com': 'analopez',
+    'carlosramirez@gmail.com': 'carlos',
+    'sofiamendez@gmail.com': 'sofia',
+    'javiertorres@gmail.com': 'javier'
+  };
 
   constructor(private servicio: LoginService, private route: Router) {}
 
@@ -24,8 +32,16 @@ export class LoginComponent {
       const token = acceso.accessToken;
       if (token) {
         localStorage.setItem("login", "true");
-        this.route.navigate(['perfilNutri']);
+        const perfil = this.perfiles[this.email];
+        if (perfil) {
+          this.route.navigate([perfil]);
+        } else {
+          alert('Perfil no encontrado');
+        }
       }
+    }, error => {
+      alert('Credenciales incorrectas');
     });
   }
 }
+

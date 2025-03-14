@@ -13,32 +13,28 @@ import { ConsultasConeService } from '../../service/consultas-cone.service';
 export class ListaConsultasComponent implements OnInit {
   consultas: any[] = [];
 
-  constructor(private servicio: ConsultasConeService) {}
+  constructor(private servicio: ConsultasService) {}
 
   ngOnInit() {
-    this.servicio.getConsultas().subscribe((consulta) => {
+    this.servicio.getConsulta().subscribe((consulta) => {
       this.consultas = consulta;
     });
   }
 
   obtenerConsultas() {
-    this.servicio.getConsultas().subscribe(data => {
+    this.servicio.getConsulta().subscribe(data => {
       this.consultas = data;
     });
   }
 
   eliminarConsultas(id: number) {
-    this.servicio.deleteConsultas(id).subscribe(() => {
+    this.servicio.deleteConsulta(id).subscribe(() => {
       this.obtenerConsultas();
     });
   }
 
-  actualizarConsultas(id: number, consulta: any) {
-    this.servicio.updateConsultas(id, consulta).subscribe(() => {
-      this.obtenerConsultas();
-    });
   }
-}
+
 
 
 

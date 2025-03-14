@@ -42,11 +42,20 @@
         </button>
       </div>
     </form>
-
+    
     <div *ngIf="mensajeExito" class="mt-6 text-center font-semibold text-green-600">
       <p>¡Usuario registrado con éxito!</p>
     </div>
   </div>
+</div>
+
+<!-- Botón Regresar al Perfil -->
+<div class="flex justify-center mt-6">
+  <button 
+    class="bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-800 transition-all"
+    [routerLink]="['/perfilPaciente']">
+    Regresar al Perfil
+  </button>
 </div>
 
 <!-- Modal de Factura -->
@@ -65,10 +74,10 @@
       <button (click)="cerrarFactura()" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300">
         Cerrar
       </button>
-      
     </div>
   </div>
 </div>
+
 
 
 

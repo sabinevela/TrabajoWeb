@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { FirebaseService } from '../../service/firebase.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-form-suscripcion',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule,RouterModule],
   templateUrl: './form-suscripcion.component.html',
   styleUrls: ['./form-suscripcion.component.css']
 })

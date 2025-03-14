@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PerfilesNutrisComponent } from './perfiles-nutris.component';
+import { SofiaPerfilComponent } from './sofia-perfil.component';
 
-describe('PerfilesNutrisComponent', () => {
-  let component: PerfilesNutrisComponent;
-  let fixture: ComponentFixture<PerfilesNutrisComponent>;
+describe('SofiaPerfilComponent', () => {
+  let component: SofiaPerfilComponent;
+  let fixture: ComponentFixture<SofiaPerfilComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PerfilesNutrisComponent]
+      imports: [SofiaPerfilComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(PerfilesNutrisComponent);
+    fixture = TestBed.createComponent(SofiaPerfilComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

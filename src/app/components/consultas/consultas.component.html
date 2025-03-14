@@ -18,6 +18,10 @@
         <label for="email">Correo Electrónico de Contacto:</label>
         <input type="email" class="form-input" id="email" name="email" [(ngModel)]="email" placeholder="Introduce tu correo electrónico" required>
       </div>
+      <div class="form-group">
+        <label for="fecha">Fecha de la Consulta:</label>
+        <input type="date" class="form-input" id="fecha" name="fecha" [(ngModel)]="fecha" required>
+      </div>
       
       <div class="form-group">
         <label for="mensaje">Descripción de tu Consulta:</label>
@@ -28,12 +32,19 @@
         <button class="form-btn">Enviar Consulta</button>
       </div>
     </form>
-
     <div class="text-center mt-5">
       <a href="/suscripcion" class="subscription-link">¿Te gustaría recibir más consejos médicos? ¡Suscríbete ahora!</a>
     </div>
+    <div class="text-center mb-5">
+      <button 
+        class="bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-800 transition-all"
+        [routerLink]="['/perfilPaciente']">
+        Regresar al Perfil
+      </button>
+    </div>
   </div>
 </div>
+
 
   
   

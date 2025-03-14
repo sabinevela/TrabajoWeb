@@ -4,6 +4,46 @@
       "email": "juanperez@gmail.com",
       "password": "$2a$10$.KNzUp5ILX.btLwm6YSraeedod6AQBi/NwH.FyWvj1h2N3EsObXkS",
       "id": 2
+    },
+    {
+      "email": "analopez@gmail.com",
+      "password": "$2a$10$sfPUBHF7/3xDI5sl6eJqX.pqn9EO/V3y5rPYk1m8MuMS9CjpJT3q6",
+      "id": 3
+    },
+    {
+      "email": "carlosramirez@gmail.com",
+      "password": "$2a$10$qYUjv1RqKx9czX0IAkMxv.9XbIcj7OAqUJzTOn.MmkNWLReOyPLhy",
+      "id": 4
+    },
+    {
+      "email": "sofiamendez@gmail.com",
+      "password": "$2a$10$tBomEbw5Dw2lrRnCraASMuM0ZvVdNDmaFifEKURrHjIbabJv61UAm",
+      "id": 5
+    },
+    {
+      "email": "javiertorres@gmail.com",
+      "password": "$2a$10$nYpaBYhV/spxhlsBxMPRBOGCyqQlynwDan6hae2wGqAyQbU2m2Qqy",
+      "id": 6
+    },
+    {
+      "email": "elenacastillo@gmail.com",
+      "password": "$2a$10$xtF7NKTPwAm8ZkYdBQ9bT.OfbLEQ6ZQEhuqmgC8DDbOZOdC7V1fFm",
+      "id": 7
+    },
+    {
+      "email": "andresvillalobos@gmail.com",
+      "password": "$2a$10$eTxUEhfUysy4PIU2JapevenZWrQIy0sgxE1vbX8FzMDnMRVo8/Dri",
+      "id": 8
+    },
+    {
+      "email": "marianaperez@gmail.com",
+      "password": "$2a$10$vAPwPUoagu6Pa6mJIlGB3e/qJiYr4VT1E3jyCX5.q8hrj.qlBM3.y",
+      "id": 9
+    },
+    {
+      "email": "eduardogomez@gmail.com",
+      "password": "$2a$10$eLpF2U5JMt6jQt/yvWvlAesyrgBlYmtMFIQ.22qeJ2xos3uYFU86G",
+      "id": 10
     }
   ]
 }

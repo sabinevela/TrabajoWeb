@@ -1,0 +1,155 @@
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-success md:text-5xl lg:text-6xl dark:text-white">
+            Bienvenido <mark class="px-2 text-white bg-green-600 rounded-sm dark:bg-green-500">al perfil</mark> de Nutriologo
+        </h1>
+        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+            Aquí podrás gestionar tus consultas, ver tu plan nutricional y más. ¡Comienza ahora!
+        </p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card shadow-lg border-0 rounded-lg profile-card">
+                <img src="https://i.pinimg.com/736x/44/28/aa/4428aaf8c622a8ef273130e1d2a17077.jpg" class="card-img-top rounded-circle mx-auto mt-4 profile-img" alt="Foto de perfil">
+                <div class="card-body text-center">
+                    <h4 class="card-title font-weight-bold text-success">Dr. Carlos Ramírez</h4>
+                    <p class="card-text text-muted">Nutriologo especializado en bienestar y nutrición personalizada.</p>
+
+<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-success hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" type="button">
+    Opciones
+    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+</button>
+
+<div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-auto dark:bg-gray-700">
+    <ul class="flex space-x-2 py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+        <li class="inline-block">
+            <a href="#" class="block px-5 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Editar Perfil</a>
+        </li>
+        <li class="inline-block">
+            <a (click)="logout()" class="block px-5 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Cerrar sesión</a>
+        </li>
+    </ul>
+</div>
+
+                   </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <h3 class="font-weight-bold text-success display-4">¿Qué deseas realizar ahora?</h3>
+            <p class="text-muted lead">Elige una opción a continuación para continuar.</p>
+        </div>
+    
+        <div class="d-flex justify-content-center flex-wrap">
+            <a href="/dietas" class="btn btn-success mx-3 my-2 w-100 w-sm-25 rounded-pill shadow-lg transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-600 hover:text-white text-center py-3 px-4">
+                <i class="fas fa-calendar-check mr-2"></i> Subir Dietas
+            </a>
+    
+            <a href="/listaDietas" class="btn btn-outline-success mx-3 my-2 w-100 w-sm-25 rounded-pill shadow-lg transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-600 hover:text-white text-center py-3 px-4">
+                <i class="fas fa-chart-pie mr-2"></i> Ver Dietas
+            </a>
+    
+            <a href="/listaConsultas" class="btn btn-success mx-3 my-2 w-100 w-sm-25 rounded-pill shadow-lg transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-600 hover:text-white text-center py-3 px-4">
+                <i class="fas fa-info-circle mr-2"></i> Ver Consultas
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card bg-light mb-4 shadow-lg border-0 rounded-lg">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Información Profesional</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Experiencia:</span>
+                                <div class="badge bg-success rounded-pill">10 años</div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Certificaciones:</span>
+                                <div class="badge bg-success rounded-pill">Nutrición clínica, Dieta deportiva</div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Consultas:</span>
+                                <div class="badge bg-success rounded-pill">2500 pacientes</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-white shadow-lg mb-4 border-0 rounded-lg">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Estadísticas</h5>
+                        <div class="d-flex justify-content-around">
+                            <div class="text-center">
+                                <h4>300</h4>
+                                <p>Consultas realizadas</p>
+                                <img src="https://i.pinimg.com/736x/32/6f/11/326f11133abd8942b028d2c89016705e.jpg" class="img-fluid rounded-circle mb-3" alt="Estadísticas de consultas" style="width: 80px; height: 80px;">
+                            </div>
+                            <div class="text-center">
+                                <h4>95%</h4>
+                                <p>Pacientes satisfechos</p>
+                                <img src="https://i.pinimg.com/736x/8b/a7/03/8ba703d760df195a66fe23fe682739ce.jpg" class="img-fluid rounded-circle mb-3" alt="Estadísticas de satisfacción" style="width: 80px; height: 80px;">
+                            </div>
+                        </div>
+
+                        <div class="progress mt-3" style="height: 12px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <h3 class="font-weight-bold text-success">Impacto en la Salud</h3>
+            <p class="text-muted">Consulta tus métricas de salud en tiempo real.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-body text-center">
+                        <i class="bi bi-heart-fill text-success" style="font-size: 50px;"></i>
+                        <h4 class="card-title font-weight-bold text-success">Salud Cardiaca</h4>
+                        <div class="progress mt-3" style="height: 12px;">
+                            <div class="progress-bar bg-success" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-body text-center">
+                        <i class="bi bi-capsule text-success" style="font-size: 50px;"></i>
+                        <h4 class="card-title font-weight-bold text-success">Nivel de Energía</h4>
+                        <div class="progress mt-3" style="height: 12px;">
+                            <div class="progress-bar bg-success" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-body text-center">
+                        <i class="bi bi-droplet-fill text-success" style="font-size: 50px;"></i>
+                        <h4 class="card-title font-weight-bold text-success">Hidratación</h4>
+                        <div class="progress mt-3" style="height: 12px;">
+                            <div class="progress-bar bg-success" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

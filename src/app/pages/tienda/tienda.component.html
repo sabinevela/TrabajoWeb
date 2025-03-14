@@ -7,33 +7,42 @@
       En nuestra tienda encontrarás ingredientes frescos, naturales y nutritivos que se adaptan a tus necesidades, tanto si buscas mejorar tu alimentación como si deseas llevar una dieta específica. 
       Cada uno de nuestros productos ha sido cuidadosamente seleccionado para ofrecerte lo mejor, con la confianza de que están elaborados con la más alta calidad. ¡Haz de tu bienestar una prioridad con nuestra tienda!
     </p>
-  </div>
+</div>
   
-  <div class="productos-container">
-    <div class="card" *ngFor="let producto of productos">
-      <img [src]="producto.imagen" alt="{{producto.nombre}}" class="product-image">
-      <h3>{{producto.nombre}}</h3>
-      <p>Precio: ${{producto.precio}}</p>
-      <button (click)="agregarAlCarrito(producto)">Agregar al Carrito</button>
-    </div>
+<div class="productos-container">
+  <div class="card" *ngFor="let producto of productos">
+    <img [src]="producto.imagen" alt="{{producto.nombre}}" class="product-image">
+    <h3>{{producto.nombre}}</h3>
+    <p>Precio: ${{producto.precio}}</p>
+    <button (click)="agregarAlCarrito(producto)">Agregar al Carrito</button>
   </div>
-  
+</div>
 
-  <div class="carrito">
-    <h3>Carrito de Compras</h3>
-    <div *ngIf="carrito.length > 0">
-      <div class="carrito-item" *ngFor="let producto of carrito">
-        <p>{{producto.nombre}} - ${{producto.precio}}</p>
-      </div>
-      <div class="total">
-        <p>Subtotal: ${{calcularTotal().subtotal}}</p>
-        <p>IVA (12%): ${{calcularTotal().iva}}</p>
-        <p>Total: ${{calcularTotal().total}}</p>
-      </div>
-      <button (click)="generarFacturaPDF()">Comprar</button>
+<div class="carrito">
+  <h3>Carrito de Compras</h3>
+  <div *ngIf="carrito.length > 0">
+    <div class="carrito-item" *ngFor="let producto of carrito">
+      <p>{{producto.nombre}} - ${{producto.precio}}</p>
     </div>
-    <div *ngIf="carrito.length === 0">
-      <p>Tu carrito está vacío.</p>
+    <div class="total">
+      <p>Subtotal: ${{calcularTotal().subtotal}}</p>
+      <p>IVA (12%): ${{calcularTotal().iva}}</p>
+      <p>Total: ${{calcularTotal().total}}</p>
     </div>
+    <button (click)="generarFacturaPDF()">Comprar</button>
   </div>
+  <div *ngIf="carrito.length === 0">
+    <p>Tu carrito está vacío.</p>
+  </div>
+</div>
+
+<!-- Botón Regresar al Perfil -->
+<div class="flex justify-center mt-6">
+  <button 
+    class="bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-800 transition-all"
+    [routerLink]="['/perfilPaciente']">
+    Regresar al Perfil
+  </button>
+</div>
+
   

@@ -13,6 +13,7 @@
       <div *ngFor="let consulta of consultas; let i = index" class="bg-green-100 shadow-xl rounded-2xl p-6 flex flex-col transform hover:scale-105 transition-all">
         <h3 class="text-xl font-semibold text-center text-green-700 mb-2">{{consulta.nombre}}</h3>
         <p class="text-sm text-gray-700 mb-2"><strong>Email:</strong> {{consulta.email }}</p>
+        <p class="text-sm text-gray-700 mb-2"><strong>Fecha:</strong> {{ consulta.fecha }}</p>
         <p class="text-sm text-gray-700 mb-4"><strong>Mensaje:</strong> {{consulta.mensaje }}</p>
         <div class="flex justify-between gap-4 mt-auto">
           <button 

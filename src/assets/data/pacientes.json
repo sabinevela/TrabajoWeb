@@ -5,6 +5,12 @@
       "password": "$2a$10$NeR0flX4Z3F.L9bReDrM4eVtn8F.sSd.qCVim0H02evuALo.8u4pG",
       "nombre": "sabine vela bermeo francis",
       "id": 1
+    },
+    {
+      "email": "dana@gmail.com",
+      "password": "$2a$10$CXkjd9I0JZ2GRh95L1Wk6Ov4GwFkT16rRjuLQukfeGLTLun73YGJm",
+      "nombre": "dana",
+      "id": 2
     }
   ]
 }
