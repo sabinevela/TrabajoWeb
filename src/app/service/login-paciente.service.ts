@@ -10,10 +10,6 @@ export class LoginPacienteService {
 
   constructor(private http: HttpClient) {}
 
-  getUserDataByEmail(email: string): Observable<any> {
-    return this.http.get(`${this.API_LOGIN}?email=${email}`);
-  }
-
   getLogin(): Observable<any> {
     return this.http.get(this.API_LOGIN);
   }
@@ -21,7 +17,12 @@ export class LoginPacienteService {
   postLogin(usuario: any): Observable<any> {
     return this.http.post(this.API_LOGIN, usuario);
   }
+
+  getUserDataByEmail(email: string): Observable<any> {
+    return this.http.get(`${this.API_LOGIN}?email=${email}`);
+  }
 }
+
 
 
 
